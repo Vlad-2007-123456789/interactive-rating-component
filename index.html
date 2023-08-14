@@ -16,26 +16,65 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="card">
-      How did we do? Please let us know how we did with your support request.
-      All feedback is appreciated to help us improve our offering! 1 2 3 4 5
-      Submit
-    </div>
+    <main class="card">
+      <section class="voting-data" aria-hidden="false">
+        <div class="circle">
+          <img class="starr" src="./images/icon-star.svg" alt="" />
+        </div>
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form>
+          <div class="knopki">
+            <label class="circle rating-btn"
+              >1
+              <input type="radio" name="rating" value="1" />
+            </label>
+            <label class="circle rating-btn"
+              >2
+              <input type="radio" name="rating" value="2" />
+            </label>
+            <label class="circle rating-btn"
+              >3
+              <input type="radio" name="rating" value="3" />
+            </label>
+            <label class="circle rating-btn"
+              >4
+              <input type="radio" name="rating" value="4" />
+            </label>
+            <label class="circle rating-btn"
+              >5
+              <input type="radio" name="rating" value="5" />
+            </label>
+          </div>
+          <button class="button">S U M B I T</button>
+        </form>
+      </section>
 
-    <!-- Thank you state start -->
+      <section class="result-data" aria-hidden="true">
+        <img
+          class="you-selected"
+          src="./images/illustration-thank-you.svg"
+          alt=""
+        />
+        <p class="selected">You selected out <output></output> of 5</p>
 
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
+        <h1 class="Thank">Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+    </main>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Vlad</a>.
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
